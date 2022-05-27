@@ -1,5 +1,5 @@
 from django.urls import reverse, resolve
-from favourites.views import markFavourtie, FavouriteProductListView
+from favourites.views import markFavourite, FavouriteProductListView
 
 class TestFavouritesUrls:
     def test_favourite_products(self):
@@ -21,4 +21,4 @@ class TestFavouritesUrls:
 
         url = reverse('mark-favourite', args=[1])
         assert resolve(url).view_name == 'mark-favourite'
-        assert resolve(url).func == markFavourtie
+        assert resolve(url).func == markFavourite
