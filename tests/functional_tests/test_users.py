@@ -3,7 +3,7 @@ from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.urls import reverse
 
 
-class TestAuthentification(StaticLiveServerTestCase):
+class TestAuthentication(StaticLiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Chrome("tests/functional_tests/chromedriver")
         self.browser.get(self.live_server_url + reverse("signup"))
@@ -66,7 +66,7 @@ class TestAuthentification(StaticLiveServerTestCase):
         )
 
 
-class TestAuthentificationFailed(StaticLiveServerTestCase):
+class TestAuthenticationFailed(StaticLiveServerTestCase):
     def setUp(self):
         self.browser = webdriver.Chrome("tests/functional_tests/chromedriver")
 
