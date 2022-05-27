@@ -1,7 +1,7 @@
 from django.urls import reverse, resolve
 from django.test import Client
 
-from favourites.views import markFavourtie, FavouriteProductListView
+from favourites.views import markFavourite, FavouriteProductListView
 from favourites.models import FavouriteProduct
 
 from pytest_django.asserts import assertTemplateUsed
